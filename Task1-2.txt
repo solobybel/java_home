@@ -1,0 +1,30 @@
+package com.trening;
+import java.util.Scanner;
+public class dz1 {
+    public static void main(String[] args) {
+        System.out.println("Enter number");
+        Scanner num=new Scanner(System.in);
+
+        double num1=num.nextDouble();
+
+
+        if (num1>=100 & num1<1000) {
+            System.out.println("The number "+num1+" has 3 digit");
+            if (num1%10==7.0){
+                System.out.println("The number "+num1+" ends with 7");
+            }
+            else {
+                System.out.println("The number "+num1+" DOESNT end with 7");
+            }
+            if (num1%2==0){
+                System.out.println("The number "+num1+" divide on 2");
+            }
+            else {
+                System.out.println("The number "+num1+" DOESNT divide on 2");
+            }
+        }
+        else {
+            System.out.println("The number "+num1+" DOESN'T have 3 digit");
+        }
+    }
+}
