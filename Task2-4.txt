@@ -1,0 +1,14 @@
+public class Massiv {
+    public static void main(String[] args) {
+        int[] marks = {2, 3, 4, 5, 5, 5, 4, 3}; //число учеников в классе 8
+        for (int t : marks) // вывод всех оценок класса
+            System.out.println(t);
+
+        for (int i = 0; i < marks.length; i++) {
+            if (marks[i] > 4) {
+                System.out.println("Макс оценка в классе " + marks[i] + " ёе номер :" + i);
+            }
+        }
+        System.out.println("First mark is "+marks[0]+"; The last mark is "+marks[7] );
+    }
+}
