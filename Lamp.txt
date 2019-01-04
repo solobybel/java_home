@@ -1,0 +1,24 @@
+class Lamp {  // класс, описывающий поведение лампы накаливания
+    
+    
+    void on(int x) { //метод, отвечающий за включение лампы
+        if (x==1) {  // подача напряжения
+            System.out.println ("The Lamp is ON"); // лампа включается
+        }
+        else {
+            System.out.println ("The Lamp is OFF"); // лампа находится в выключенном состоянии
+        }
+    }
+    
+}
+public class turnLight {    
+    
+        public static void main(String args[]) {
+            System.out.println ("Set the switcher position (1 for ON, 0 for OFF)");
+        Lamp bulb1=new Lamp();
+        bulb1.on(1); // установка положения переключателя
+        
+
+        
+    }
+}
